@@ -1,0 +1,23 @@
+[package]
+name = "sctransaction"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["Gear Technologies"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+gstd = { git = "https://github.com/gear-tech/gear.git", features = ["debug"] }
+codec = { package = "parity-scale-codec", version = "3.2.1", default-features = false }
+primitive-types = { version = "0.12.1", default-features = false, features = ["scale-info"] }
+scale-info = { version = "2.3.0", default-features = false }
+
+
+
+
+[build-dependencies]
+gear-wasm-builder = { git = "https://github.com/gear-tech/gear.git" }
+
+[dev-dependencies]
+gtest = { git = "https://github.com/gear-tech/gear.git"}
