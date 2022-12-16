@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transacciones</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/redessociales.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body style="background-color: #000;">
+    <div class="card" style="background-color: #000;">
+        <img src="img/logo.jpeg" class="mx-auto img-fluid" alt="logo">
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <a class="btn btn-secondary me-2" type="button" href="index.html">INICIO</a>
+                <a class="btn btn-secondary me-2" type="button" href="registro.html">REGISTRO</a>
+                <a class="btn btn-secondary me-2" type="button" href="login.html">LOGIN </a>
+                
+            </ul>
+        </div>
+        </div>
+    </nav>
+    
+
+    <!-- Inicio del login -->
+    <section class="background-radial-gradient overflow-hidden">
+        <style>
+          .background-radial-gradient {
+            background-color: hsl(0, 1%, 34%);
+            background-image: radial-gradient(650px circle at 0% 0%,
+                hsl(0, 2%, 10%) 15%,
+                hsl(0, 3%, 15%) 35%,
+                hsl(0, 1%, 14%) 75%,
+                hsl(0, 0%, 13%) 80%,
+                transparent 100%),
+              radial-gradient(1250px circle at 100% 100%,
+                hsl(0, 3%, 15%) 15%,
+                hsl(0, 3%, 12%) 35%,
+                hsl(0, 2%, 17%) 75%,
+                hsl(0, 0%, 16%) 80%,
+                transparent 100%);
+          }
+      
+          #radius-shape-1 {
+            height: 220px;
+            width: 220px;
+            top: -60px;
+            left: -130px;
+            background: radial-gradient(#d0b8b8, #886e88);
+            overflow: hidden;
+          }
+      
+          #radius-shape-2 {
+            border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+            bottom: -60px;
+            right: -110px;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(#d0b8b8, #886e88);
+            overflow: hidden;
+          }
+
+          #radius-shape-3 {
+            height: 200px;
+            width: 200px;
+            top: 570px;
+            left: -20px;
+            background: radial-gradient(#d0b8b8, #886e88);
+            overflow: hidden;
+          }
+
+          #radius-shape-4 {
+            height: 200px;
+            width: 200px;
+            top: -255px;
+            left: 370px;
+            background: radial-gradient(#d0b8b8, #886e88);
+            overflow: hidden;
+          }
+      
+          .bg-glass {
+            background-color: hsla(0, 0%, 100%, 0.9) !important;
+            backdrop-filter: saturate(200%) blur(25px);
+          }
+        </style>
+    
+        <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+          <div class="row gx-lg-5 align-items-center mb-5">
+            <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+              <h1 class="my-5 display-1 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+                SCTransaction<br />
+                <span class="m-3 display-3" style="color: hsl(0, 0%, 59%)">by Web404</span>
+              </h1>
+              
+              <!--parrafo de eslogan o brebe descripcion sobre nosotros-->
+              <p class="mb-4 opacity-70 text-justify lead" style="color: hsl(218, 81%, 85%)">
+                Eficiencia y Seguridad es lo que nosotros te vamos a otorgar Web404
+                Buscamos hacer Fácil lo Difícil.
+              </p>
+            </div>
+        
+            <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+              <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+              <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+              <div id="radius-shape-3" class="position-absolute rounded-circle shadow-5-strong"></div>
+              <div id="radius-shape-4" class="position-absolute rounded-circle shadow-5-strong"></div>
+            
+              <div class="card bg-glass">
+                <div class="card-body px-4 py-5 px-md-5">
+                  <div class="text-center">
+                    <br><p class="h1">Transacción</p></br>
+                  </div>
+                  <form name="form" action="registro.php" method="post" class="needs-validation" novalidate>
+                    <!-- 2 contenido principal para el llenado de campos -->                
+                    <!-- entrada de email -->
+                    <div class="form-outline mb-4">
+                      <input type="email" id="form3Example3" class="form-control" required name="correo"/>
+                      <label class="form-label" for="form3Example3">* Correo electrónico del usuario que recibirá la transacción</label>
+                      <div class="valid-feedback">
+                        Dato ingresado correctamente.
+                      </div>
+                      <div class="invalid-feedback">
+                        Correo electrónico no ingresado o no valido.
+                      </div>
+                    </div>
+                
+                    <!-- entrada de contraseña -->
+                    <div class="form-outline mb-4">
+                      <input type="number" id="form3Example4" class="form-control" required name="contraseña"/>
+                      <label class="form-label" for="form3Example4">* Monto de transacción</label>
+                      <div class="valid-feedback">
+                        Dato ingresado correctamente.
+                      </div>
+                      <div class="invalid-feedback">
+                        Dato no ingresado.
+                      </div>
+                    </div>
+ 
+                    <div class="text-center"><!--contenedor de boton-->
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-primary btn-block mb-5">
+                            Aceptar
+                        </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- Fin del login -->
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+          'use strict'
+        
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          const forms = document.querySelectorAll('.needs-validation')
+        
+          // Loop over them and prevent submission
+          Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+          
+              form.classList.add('was-validated')
+            }, false)
+          })
+        })()
+    </script>
+
+    <footer>
+        <div class=" redes bg-dark">
+          <div class="icon">
+            <svg heigth="80" width="80" class="margen">
+                <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none" ></circle>
+            </svg>
+            <i class="bx bxl-instagram"></i>
+        </div>
+      
+        <div class="icon">
+            <svg heigth="80" width="80" class="margen">
+                <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none" ></circle>
+            </svg>
+            <i class='bx bxl-facebook-circle'></i>
+        </div>
+      
+        <div class="icon">
+            <svg heigth="80" width="80" class="margen">
+                <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none" ></circle>
+            </svg>
+            <i class='bx bxl-whatsapp' ></i>
+        </div>
+      
+        <div class="icon">
+            <svg heigth="80" width="80" class="margen">
+                <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none" ></circle>
+            </svg>
+            <i class='bx bxl-twitter' ></i>
+        </div>
+      </div>
+      </footer>
+</body>
+    <script src="js/bootstrap.min.js"></script>
+</html>
